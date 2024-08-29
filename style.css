@@ -1,0 +1,89 @@
+/* Center the h1 element at the top of the calendar */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #62df66;
+}
+
+h1 {
+    margin: 80px 1;
+    text-align: center;
+    color: #004602;
+    font-size: 3.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Ensure the calendar is centered as well */
+.calendar {
+    width: 350px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.calendar {
+    width: 350px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.month h2 {
+    margin: 0;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.weekdays, .days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.weekdays div, .days div {
+    width: 14.28%;
+    padding: 10px;
+    text-align: center;
+}
+
+.weekdays {
+    background-color: #eee;
+}
+
+.days div {
+    cursor: pointer;
+    margin: 2px 0;
+    transition: background-color 0.3s ease;
+}
+
+.days div:hover {
+    background-color: #ddd;
+}
+
+.days .today {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+}
